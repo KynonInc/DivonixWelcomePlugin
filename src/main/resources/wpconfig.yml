@@ -1,0 +1,42 @@
+# Placeholders usable in messages and embeds:
+# %member-tag% - display member's full tag
+# %member-name% - display member's discord name
+# %member-mention% - mention the member
+# %member-nickname% - display member's nickname
+# %member-id% - display member's discord account ID
+# %member-avatar-url% - display member's discord profile image URL (can be used in .image and .thumbnail)
+# %total-members% - total server members
+# %bot-version% - bot's version
+# please note some might not work correctly in titles, footers, field titles due to discord limitations
+
+#============================== JOINING
+
+join-announce-channel: paste-channel-id-here
+
+join.message: "%member-mention% welcome to the server"
+join.embed: true
+join.title: "Member #%total-members%"
+join.description: "Please be respectful to other server members and follow our rules. Enjoy your stay!"
+join.footer: "DWP | v%bot-version%"
+join.image:
+join.thumbnail: "%member-avatar-url%"
+join.color: 110,63,186
+join.fields:
+  - "Visit our GitHub for wiki|~|https://github.com/KynonInc/DivonixWelcomePlugin/wiki|~|true"
+
+#============================== LEAVING
+
+# mention placeholders might not work due to discord limitations
+
+leave-announce-channel: paste-channel-id-here
+
+leave.message:
+leave.embed: true
+leave.title: "%member-tag% has left"
+leave.description: "Total members: `%total-members%`"
+leave.footer: "DWP | v%bot-version%"
+leave.image:
+leave.thumbnail: "%member-avatar-url%"
+leave.color: 110,63,186
+leave.fields:
+  - "Visit our GitHub for wiki|~|https://github.com/KynonInc/DivonixWelcomePlugin/wiki|~|true"
