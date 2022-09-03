@@ -15,7 +15,7 @@ import static net.kynon.divonix.Main.jda;
 
 public class Main extends DivonixPlugin {
 
-    public static String version = "1.0.0";
+    public static String version = "1.1.0";
 
     @Override
     public void onEnable() {

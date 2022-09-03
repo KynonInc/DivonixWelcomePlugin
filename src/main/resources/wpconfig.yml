@@ -13,6 +13,12 @@
 
 join-announce-channel: paste-channel-id-here
 
+# You can put your server roles' IDS here (you need to separate them by "," if putting more than one)\
+# examples:
+# roles-on-join: 965309861770453143
+# roles-on-join: 965309861770453143,966007850923073627,1006274025288372286
+roles-on-join:
+
 join.message: "%member-mention% welcome to the server"
 join.embed: true
 join.title: "Member #%total-members%"
